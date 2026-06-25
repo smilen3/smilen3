@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>佐々木尚子｜保育士・栄養士</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --pink:#d93ec4;
+    --orange:#ff7a00;
+    --text:#333;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Zen Maru Gothic',sans-serif;
+    color:var(--text);
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.85),
+            rgba(255,255,255,0.85)
+        ),
+        url("images/back.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    overflow-x:hidden;
+}
+
+/* ---------------- */
+/* HERO */
+/* ---------------- */
+
+.hero{
+
+    text-align:center;
+    padding:80px 20px 50px;
+}
+
+.hero h1{
+
+    font-size:clamp(2.8rem,6vw,5rem);
+    margin-bottom:10px;
+}
+
+.hero .sub{
+
+    color:#777;
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.hero .lead{
+
+    max-width:850px;
+    margin:auto;
+
+    line-height:2;
+    font-size:1.05rem;
+}
+
+.profile-photo{
+
+    width:220px;
+    height:220px;
+
+    margin:45px auto 0;
+
+    border-radius:50%;
+    overflow:hidden;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.15);
+}
+
+.profile-photo img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ---------------- */
+/* SERVICES */
+/* ---------------- */
+
+.services{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:70px;
+
+    flex-wrap:wrap;
+
+    margin:70px auto 100px;
+}
+
+.service{
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    display:block;
+
+    transition:.4s;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.12);
+}
+
+.service:hover{
+
+    transform:
+        translateY(-12px)
+        scale(1.03);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.18);
+}
+
+.service img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.ehon{
+
+    border:10px solid #f4b7ed;
+}
+
+.taberu{
+
+    border:10px solid #ffc56f;
+}
+
+/* ---------------- */
+/* MESSAGE */
+/* ---------------- */
+
+.message{
+
+    max-width:900px;
+    margin:auto;
+
+    padding-bottom:100px;
+}
+
+.message-box{
+
+    background:white;
+
+    border-radius:35px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+.message-box h2{
+
+    margin-bottom:20px;
+
+    font-size:1.8rem;
+}
+
+.message-box p{
+
+    line-height:2;
+}
+
+/* ---------------- */
+/* FOOTER */
+/* ---------------- */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#777;
+}
+
+/* ---------------- */
+/* MOBILE */
+/* ---------------- */
+
+@media(max-width:1100px){
+
+.services{
+
+    flex-direction:column;
+    gap:50px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+    padding-top:50px;
+}
+
+.hero .lead{
+
+    font-size:.95rem;
+}
+
+.profile-photo{
+
+    width:180px;
+    height:180px;
+}
+
+.service{
+
+    width:320px;
+    height:320px;
+}
+
+.message-box{
+
+    padding:35px 25px;
+}
+
+.message-box h2{
+
+    font-size:1.5rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+佐々木 尚子
+</h1>
+
+<div class="sub">
+保育士・栄養士・２児の母
+</div>
+
+<p class="lead">
+
+子どもたちとご家族の笑顔のために。
+
+絵本と音楽による読み聞かせ、
+そして毎日の食事を楽しくする食育支援。
+
+親子の時間がより豊かで温かなものになるよう、
+心を込めて活動しています。
+</p>
+
+<!--
+
+<div class="profile-photo">
+    <img src="images/naoko.png" alt="佐々木尚子">
+</div>
+
+-->
+
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="services">
+
+<a href="ehon.html" class="service ehon">
+    <img src="images/ehon.png" alt="えほん de コンサート">
+</a>
+
+<a href="taberu.html" class="service taberu">
+    <img src="images/taberu.png" alt="安心 あかちゃんからの食べること">
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="message">
+
+<div class="container">
+
+<div class="message-box">
+
+<h2>
+ようこそ
+</h2>
+
+<p>
+
+絵本を読む時間。
+
+音楽を楽しむ時間。
+
+ご飯を食べる時間。
+
+何気ない日常のひとときが、
+親子にとってかけがえのない思い出になりますように。
+
+それぞれの活動について、
+ぜひご覧ください。
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 佐々木尚子
+
+</footer>
+
+</body>
+</html>
