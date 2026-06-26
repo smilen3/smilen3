@@ -520,16 +520,17 @@ section .grid-box {
 /*お知らせページ（new.html）
 ---------------------------------------------------------------------------*/
 	/*画面幅700px以上の追加指定*/
-	@media screen and (min-width:700px) {
+	/*@media screen and (min-width:700px) {*/
 
 	/*ブロック全体*/
 	.new {
 		display: grid;
 		gap: 1rem;  /*日付や文章の間にとるスペース。１文字分。*/
 		grid-template-columns: auto 1fr;	/* 日付の幅は自動で、内容が入るブロックは残り幅一杯とる。 */
+		line-height:1.6;
 	}
 
-	}/*追加指定ここまで*/
+	/*}/*追加指定ここまで*/
 
 
 /*背景画像が少しずつ上に移動する
