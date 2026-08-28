@@ -75,12 +75,12 @@ html,body {
 body {
 	margin: 0;padding:0;
 	font-family: "Kiwi Maru", "Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;	/*フォント種類*/
-	font-weight: 300;
+	
 	-webkit-text-size-adjust: none;
 	/*background: var(--bg-color);	背景色*/
 	background: url('../images/bg.png') repeat center center / 800px;
 	color: var(--bg-inverse-color);		/*文字色*/
-	line-height: 3;		/*行間*/
+	line-height: 2;		/*行間*/
 	overflow-x: hidden;
 }
 
@@ -840,3 +840,72 @@ footer small {
 .small {font-size: 0.75em;}
 .large {font-size: 2em; letter-spacing: 0.1em;}
 .block {display: block !important;}
+
+
+/* プロフィールポップアップ */
+.profile-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* 表示状態 */
+.profile-modal.active {
+    display: flex;
+}
+
+/* ポップアップ本体 */
+.profile-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    max-height: 85vh;
+    overflow-y: auto;
+
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* 閉じるボタン */
+.profile-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    border: none;
+    background: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* リンク画像 */
+.profile-modal-content img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 25px auto 10px;
+    cursor: pointer;
+}
+
+/* PCではスマホ用改行を無効化（非表示） */
+.sp-only {
+    display: none;
+}
+
+/* スマホサイズ（画面幅768px以下）の時だけ改行を有効化 */
+@media (max-width: 768px) {
+    .sp-only {
+        display: inline;
+    }
+}
