@@ -14,11 +14,25 @@
 
 
 
+<!--開閉メニュー-->
+<div id="menubar">
 
+<nav>
+<ul>
+<li><a href="ehon.html">TOP</a></li>
+<li><a href="ehon.html#jamp1">こんな声を頂きます</a></li>
+<li><a href="ehon.html#jamp2">プロフィール</a></li>
+<li><a href="ehon.html#jamp3">開催実績</a></li>
+<li><a href="ehon.html#jamp4">ご依頼</a></li>
+</ul>
+</nav>
+
+</div>
 
 <main>
 
 <section>
+
 
 <div class="grid-box">
 
@@ -28,11 +42,14 @@
 	<img src="images/mainimg.png" alt="">
 	</div>
 
+<br>
+
 	<div class="text up">
 	<h4>ごあいさつ<span>Greeting</span></h4>
-	<p>お子さまはもちろん、いつも読み聞かせしている大人にも<br>
-	絵本を読んでもらう喜びや、癒しを感じていただけます<br>
-	音楽と絵本が奏でるハーモニーで思い出に残るひとときを</p>
+	<p>
+	お子さまはもちろん<br>いつも読み聞かせしている大人にも<br><br>
+	絵本を読んでもらう喜びや<br>癒しを感じていただけます<br><br>
+	音楽と絵本が奏でるハーモニーで<br>思い出に残るひとときを</p>
 	</div>
 
 </article>
@@ -45,7 +62,7 @@
 
 <div class="bg1">
 
-<section>
+<section id="jamp1">
 
 <h2 class="c">こんな声を頂きます<span>Review</span></h2>
 
@@ -56,29 +73,31 @@
 
 <div
     style="
-        width:100%;
-        height:200px;
-        background:#D2EAFE;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        border-radius:0px;
-        text-align:center;
+        width: 100%;
+        height: 350px;
+        background: url('images/kuchikomi.jpg') no-repeat center center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     "
 >
-    <div>
+<!-- 文字のブロックに margin を指定して位置をずらす例 -->
+    <div style="margin-top: -70px; margin-left: 40px;">
         <div
             style="
-                margin-top:15px;
-                font-size:14px;
+                font-size: 14px;
+                color: #333333;
+                line-height: 1.8;
+                font-weight: 500;
             "
         >
-           暖かい雰囲気の中<br>音楽と読み聞かせに<br>
-           引き込まれて<br><br>ジーンとしちゃいました。
+            暖かい雰囲気の中<br>音楽と読み聞かせに<br>
+            引き込まれて<br><br>ジーンとしちゃいました。
         </div>
     </div>
 </div>
-<div class="rank-flag rank2"><i class="fas fa-music"></i></div>
 
 </div>
 
@@ -87,21 +106,24 @@
 
 <div
     style="
-        width:100%;
-        height:200px;
-        background:#D2EAFE;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        border-radius:0px;
-        text-align:center;
+        width: 100%;
+        height: 350px;
+        background: url('images/kuchikomi.jpg') no-repeat center center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     "
 >
-    <div>
+<!-- 文字のブロックに margin を指定して位置をずらす例 -->
+    <div style="margin-top: -70px; margin-left: 40px;">
         <div
             style="
-                margin-top:15px;
-                font-size:14px;
+                font-size: 14px;
+                color: #333333;
+                line-height: 1.8;
+                font-weight: 500;
             "
         >
            「子供が聴いていなくても<br>　かまいません！」と<br><br>
@@ -109,7 +131,6 @@
         </div>
     </div>
 </div>
-<div class="rank-flag rank2"><i class="fas fa-music"></i></div>
 
 </div>
 
@@ -118,21 +139,24 @@
 
 <div
     style="
-        width:100%;
-        height:200px;
-        background:#D2EAFE;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        border-radius:0px;
-        text-align:center;
+        width: 100%;
+        height: 350px;
+        background: url('images/kuchikomi.jpg') no-repeat center center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     "
 >
-    <div>
+<!-- 文字のブロックに margin を指定して位置をずらす例 -->
+    <div style="margin-top: -70px; margin-left: 40px;">
         <div
             style="
-                margin-top:15px;
-                font-size:14px;
+                font-size: 14px;
+                color: #333333;
+                line-height: 1.8;
+                font-weight: 500;
             "
         >
            音楽があるからか<br>いつも絵本に<br>
@@ -140,7 +164,6 @@
         </div>
     </div>
 </div>
-<div class="rank-flag rank2"><i class="fas fa-music"></i></div>
 
 </div>
 
@@ -153,48 +176,25 @@
 </div>
 <!--/.bg1-->
 
-<div class="bg-slideup">
-<p class="c btn1 up"><a href="index.html"><i class="fa-solid fa-face-smile"></i>Naoko Sasaki</a></p>
+
+<section id="jamp2">
+
+<div class="text up">
+<h2>自己紹介<span>Profile</span></h2>
+	
+<div class="profile-image-up" style="text-align: center;">
+    <a href="javascript:void(0);" id="naoko-profile-open">
+        <img src="images/staff.png" alt="ささきなおこ プロフィール" style="width: 200px; height: auto;">
+    </a>
 </div>
 
-<section>
-
-<div class="grid-box">
-
-<article>
-
-
-
-	<div class="image image-01 up">
-	<img src="images/imagebyai01.png" alt="">
-	</div>
-
-	<div class="text text-01 up">
-	<h4>私の体験<span>My Experience</span></h4>
-	<p>私自身が子育てに悩んでいるころに<br>
-	絵本に音楽をのせた、
-	読み聞かせに出会い、</p>
-	<p>涙が止まらなくなる経験をしました。</p>
-	<p>私も子育てを頑張る方々の
-	心に届く絵本をお伝えしたいと、<br>
-	２０２０年から
-	各地の子育て施設で活動しております。</p>
-	</div>
-
-</article>
-
-
-
-
-
-
 </div>
-<!--/.grid-box-->
 
 </section>
 
-<section class="bg1">
+<section class="bg1" id="jamp3">
 
+<div class="text up">
 <h2>開催実績<span>Activities</span></h2>
 
 <dl class="new">
@@ -211,26 +211,47 @@
 <dt></dt>
 <dd>かるがも親子　氷川台</dd>
 <dt></dt>
-<dd>光が丘プレパひろば</dd>
+<dd>みんなのいえ小竹さくらんぼひろば</dd>
 <dt></dt>
-<dd>小竹プレパひろば</dd>
+<dd>中野区　おやこのひろばniico</dd>
 </dl>
 
-</section>
-
-<section>
-
-<h2>親子向けのイベントに！</h2>
-
-<h3>えほんdeコンサート（約30分 絵本6～7冊）5千円～</h3>
-<p>※講師は現役で保育園に勤務している栄養士です。<br>
-ご希望があれば、コンサート後に離乳食の相談を受けさせて頂きます。</p>
-<p>※初回打合せ時に、ご担当者様向けに読み聞かせをさせて頂きます。</p>
-<p>※交通費はご負担いただきます。<br>
-　（東京メトロ・地下鉄赤塚駅　東武東上線・下赤塚駅より）</p>
-
+</div>
 
 </section>
+
+<section id="jamp4">
+
+<div class="grid-box">
+
+<article>
+
+
+<br>
+	<div class="image image-01 up">
+	<img src="images/image.png" alt="">
+	</div>
+
+	<div class="text text-01 up">
+		<h2>親子向けのイベントに！</h2>
+
+		<h3>えほんdeコンサート（約30分 絵本6～7冊）</h3>
+
+		<p>※講師は現役で保育園に勤務している栄養士です。<br>
+		   　ご希望があれば、コンサート後に<br class="sp-only">　離乳食の相談を受けさせて頂きます。</p>
+		<p>※初回打合せ時に、ご担当者様向けに読み聞かせを<br class="sp-only">　させて頂きます。</p>
+		<p>※交通費はご負担いただきます。<br>
+		（東京メトロ・地下鉄赤塚駅<br class="sp-only">　東武東上線・下赤塚駅より）</p>
+
+	</div>
+
+</article>
+
+</div>
+
+
+</section>
+
 
 </main>
 
@@ -258,7 +279,103 @@
 <!--ページの上部へ戻るボタン-->
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
 
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
 
+<!--メニューを選択したとき、メニューを閉じる為のスクリプト-->
+<script>
+document.querySelectorAll('#menubar a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+
+        const href = link.getAttribute('href');
+
+        // ehon.html#jamp1 など、ページ内ジャンプの場合
+        if (href && href.includes('#')) {
+            e.preventDefault();
+
+            const hash = href.substring(href.indexOf('#'));
+            const target = document.querySelector(hash);
+
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            // URLから #jamp1 などを消す
+            history.replaceState(null, '', 'ehon.html');
+        }
+
+        // メニューを閉じる
+        document.getElementById('menubar_hdr').click();
+    });
+});
+
+</script>
+
+
+<!--プロフィールのポップアップ-->
+<div id="naoko-profile-modal" class="profile-modal">
+
+    <div class="profile-modal-content">
+
+        <button id="naoko-profile-close" class="profile-modal-close">
+            ×
+        </button>
+
+        <h2 style="line-height: 1.8; color: #C31482;">ささき なおこ</h2>
+
+        <p style="line-height: 1.8;">
+            現役で保育園勤務！保育士・栄養士・２児の母
+        </p>
+
+        <p style="line-height: 1.8;">
+            私自身が子育てに悩んでいるころに、<br>
+            絵本に音楽をのせた読み聞かせに出会い、<br>
+            涙が止まらなくなる経験をしました。<br><br>
+            私も子育てを頑張る方々の<br>
+            心に届く絵本をお伝えしたいと、<br>
+            ２０２０年から各地の子育て施設で活動しております。<br><br>
+            「あかちゃんからnoたべること」もご覧ください。
+        </p>
+
+        <!-- 別サイトへのリンク画像 -->
+        <div style="text-align: center;">
+            <a href="taberu.html" target="_blank" rel="noopener">
+                <img src="images/taberu.png" alt="ささきなおこの公式サイト" style="width: 150px; height: auto;">
+            </a>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script>
+const profileOpen = document.getElementById('naoko-profile-open');
+const profileModal = document.getElementById('naoko-profile-modal');
+const profileClose = document.getElementById('naoko-profile-close');
+
+/* 開く */
+profileOpen.addEventListener('click', function(e) {
+    e.preventDefault();
+    profileModal.classList.add('active');
+});
+
+/* 閉じる */
+profileClose.addEventListener('click', function() {
+    profileModal.classList.remove('active');
+});
+
+/* 背景をクリックして閉じる */
+profileModal.addEventListener('click', function(e) {
+    if (e.target === profileModal) {
+        profileModal.classList.remove('active');
+    }
+});
+</script>
 
 <!--jQueryの読み込み-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

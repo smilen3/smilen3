@@ -14,9 +14,21 @@
 
 <header>
 
+<!--メニュー-->
+<div id="menubar">
 
+<nav>
+<ul>
+<li><a href="#concept">コンセプト</a></li>
+<li><a href="#koe">うれしいお声</a></li>
+<li><a href="#irai">ご依頼</a></li>
+<li><a href="#jisseki">開催実績</a></li>
+<li><a href="#access">お問い合わせ</a></li>
+</ul>
+</nav>
+
+</div>
 <!--/#menubar-->
-
 </header>
 
 <div class="mainimg">
@@ -35,8 +47,8 @@
 <div class="flex1 reverse">
 
 <div class="text inview">
-<h2 class="line">毎日の食事の時間</h2>
-<p><strong>赤ちゃんとおうちの方にとって楽しい時間になる</strong></p>
+<h2 class="line">食べることが好きな子に</h2>
+<p><strong>小食でも、偏食でも、食べることが好きな子になる講座</strong></p>
 <p>赤ちゃんが「食べない」「丸呑みする」などの<br>
 原因は、味や形状ではなく食べさせ方や姿勢が<br>
 成長にあっていないことがほとんどです。<br>
@@ -55,12 +67,25 @@
 <!--/.flex1-->
 <br>
 
-<p class="btn c"><a href="index.html">講師　佐々木 尚子</a></p>
+<p class="btn c"><a href="#">講師　佐々木 尚子</a></p>
+
+<div class="profile-image-up" style="text-align: center;">
+    <a href="javascript:void(0);" id="naoko-profile-open">
+        <p class="btn c">工事中（プロフィール表示がなんかうまくできなくて）</a></p>
+    </a>
+</div>
+
+<div class="profile-image-up" style="text-align: center;">
+    <a href="javascript:void(0);" id="naoko-profile-open">
+        <img src="images/staff.png" alt="ささきなおこ プロフィール" style="width: 200px; height: auto;">
+    </a>
+</div>
+
 <br>
 
 </section>
 
-<section id="menu">
+<section id="koe">
 
 <h2 class="c">うれしいお声</h2>
 
@@ -163,7 +188,7 @@
 
 </section>
 
-<section class="bg-parts bg1-primary-parts mt0">
+<section class="bg-parts bg1-primary-parts mt0" id="irai">
 
 <div class="list2">
 
@@ -197,7 +222,7 @@
 
 </section>
 
-<section class="bg-parts bg1-light-parts" id="shop-data">
+<section class="bg-parts bg1-light-parts" id="jisseki">
 
 <div class="flex2">
 
@@ -281,6 +306,74 @@ XXXXXXXX@XXXXXXXXXXX
 <!--ページの上部へ戻るボタン-->
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
 
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+
+
+<!--プロフィールのポップアップ-->
+<div id="naoko-profile-modal" class="profile-modal">
+
+    <div class="profile-modal-content">
+
+        <button id="naoko-profile-close" class="profile-modal-close">
+            ×
+        </button>
+
+        <h2 style="line-height: 1.8; color: #C31482;">ささき なおこ</h2>
+
+        <p style="line-height: 1.8;">
+            現役で保育園勤務！保育士・栄養士・２児の母
+        </p>
+
+        <p style="line-height: 1.8;">
+            私自身が子育てに悩んでいるころに、<br>
+            絵本に音楽をのせた読み聞かせに出会い、<br>
+            涙が止まらなくなる経験をしました。<br><br>
+            私も子育てを頑張る方々の<br>
+            心に届く絵本をお伝えしたいと、<br>
+            ２０２０年から各地の子育て施設で活動しております。<br><br>
+            「あかちゃんからnoたべること」もご覧ください。
+        </p>
+
+        <!-- 別サイトへのリンク画像 -->
+        <div style="text-align: center;">
+            <a href="ehon.html" target="_blank" rel="noopener">
+                <img src="images/taberu.png" alt="ささきなおこの公式サイト" style="width: 150px; height: auto;">
+            </a>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+const profileOpen = document.getElementById('naoko-profile-open');
+const profileModal = document.getElementById('naoko-profile-modal');
+const profileClose = document.getElementById('naoko-profile-close');
+
+/* 開く */
+profileOpen.addEventListener('click', function(e) {
+    e.preventDefault();
+    profileModal.classList.add('active');
+});
+
+/* 閉じる */
+profileClose.addEventListener('click', function() {
+    profileModal.classList.remove('active');
+});
+
+/* 背景をクリックして閉じる */
+profileModal.addEventListener('click', function(e) {
+    if (e.target === profileModal) {
+        profileModal.classList.remove('active');
+    }
+});
+</script>
 
 
 <!--jQueryの読み込み-->
