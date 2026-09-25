@@ -628,7 +628,7 @@ main ul,main ol {
 /*ボックス全体*/
 .list2 {
 	display: grid;
-	grid-template-columns: 20% minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);	/*左（見出し）が20%、残りの3ブロックは均等に。*/
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 1rem;		/*ボックス同士の間に空けるスペース。1文字分。*/
 }
 
@@ -637,7 +637,7 @@ main ul,main ol {
 
 	/*ボックス全体*/
 	.list2 {
-		grid-template-columns: repeat(3, minmax(0, 1fr));	/*3列に*/
+		grid-template-columns: 1fr;	/*3列に*/
 	}
 
 	}/*追加指定ここまで*/
@@ -661,6 +661,7 @@ main ul,main ol {
 	align-self: center;
 	background: url("../images/kazari2.png") no-repeat center top / 4rem;	/*上の装飾画像の読み込み。幅は4文字分。*/
 	padding-top: 2rem;	/*上の装飾イラストを配置させる為に余白確保*/
+	grid-column: 1 / -1;
 }
 
 	/*画面幅900px以下の追加指定*/
@@ -725,6 +726,18 @@ main ul,main ol {
 	color: var(--accent-inverse-color);	/*背景色。theme.cssのaccent-inverse-colorを読み込みます。*/
 }
 
+.list2 .memo {
+	grid-column: 1 / -1;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+@media (max-width:500px) {
+    .list2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 
 /*padding1（人気メニューで使っている白い土台）
 ---------------------------------------------------------------------------*/
